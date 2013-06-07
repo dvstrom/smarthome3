@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fillViewport="true">
+	
+<FrameLayout
+	android:id="@+id/Play"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<AbsoluteLayout
+	    android:id="@+id/widget_Play"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+	    <SurfaceView
+	        android:id="@+id/surfaceView3"
+	        android:layout_width="154dp"
+	        android:layout_height="192dp"
+	        android:layout_x="161dp"
+	        android:layout_y="0dp" />
+
+	    <SurfaceView
+	        android:id="@+id/surfaceView2"
+	        android:layout_width="152dp"
+	        android:layout_height="194dp"
+	        android:layout_x="5dp"
+	        android:layout_y="-1dp" />
+
+	    <SurfaceView
+	        android:id="@+id/surfaceView1"
+	        android:layout_width="151dp"
+	        android:layout_height="193dp"
+	        android:layout_x="6dp"
+	        android:layout_y="202dp"
+	        android:background="#0000ff00" />
+
+	    <SurfaceView
+	        android:id="@+id/surfaceView4"
+	        android:layout_width="152dp"
+	        android:layout_height="191dp"
+	        android:layout_x="163dp"
+	        android:layout_y="203dp" />
+
+	</AbsoluteLayout>
+
+</FrameLayout>
+
+</ScrollView>

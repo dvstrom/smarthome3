@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500" android:drawable="@drawable/home_title" />
+    <item android:duration="500" android:drawable="@drawable/home_title_midle" />
+    <item android:duration="500" android:drawable="@drawable/home_title_less" />
+    <item android:duration="500" android:drawable="@drawable/home_title_none" />
+    <item android:duration="500" android:drawable="@drawable/home_title_less" />
+    <item android:duration="500" android:drawable="@drawable/home_title_midle" />
+    <item android:duration="500" android:drawable="@drawable/home_title" />
+</animation-list>

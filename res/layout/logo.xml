@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_festival_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayout_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/imageView_logo" android:background="@drawable/op_001" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/logo_wulian" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/linearLayout_special" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

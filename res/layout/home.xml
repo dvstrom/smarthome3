@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_festival_bg">
+    
+    <ImageView
+        android:id="@+id/baojing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/device_baojing_normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY">
+    </ImageView>
+    
+   <GridView
+	android:id="@+id/gv_button"
+	android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"
+    android:layout_below="@id/baojing"  
+    android:numColumns="2"  
+    android:gravity="center">
+	</GridView>
+    
+
+</RelativeLayout> -->
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_festival_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/general_content_topview" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <GridView
+	    android:id="@+id/gv_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	 	android:numColumns="2"	 	
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" >
+	</GridView>
+    </RelativeLayout>
+</LinearLayout>

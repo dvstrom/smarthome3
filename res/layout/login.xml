@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:background="@drawable/main_festival_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/imageView_home_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_title" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/login_frame_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <TextView android:textSize="@dimen/login_text_size" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="账号" style="@style/textViewStyle" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.8">
+                    <EditText android:id="@+id/editText_gw_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="12" android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" style="@style/EditTextStyle" />
+                    <ImageButton android:id="@+id/imageButton_gw_history" android:background="@drawable/button_dropdown_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_alignRight="@+id/editText_gw_name" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.5" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <TextView android:textSize="@+dimen/login_text_size" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码" style="@style/textViewStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.8">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.8">
+                        <EditText android:id="@+id/editText_gw_pwd" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" style="@style/EditTextStyle" />
+                        <ImageButton android:id="@+id/imageButton_clear_pwd_input" android:background="@drawable/btn_clear_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignRight="@+id/editText_gw_pwd" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.5" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.2" />
+                <Button android:textSize="@dimen/login_text_size" android:textColor="@color/white" android:id="@+id/button_login" android:background="@drawable/button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登陆" android:layout_weight="0.8" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.2" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.2" />
+                <Button android:textSize="@dimen/login_text_size" android:textColor="@color/white" android:id="@+id/button_demo" android:background="@drawable/button_demo_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="演示" android:layout_weight="0.8" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:id="@+id/linearLayout_rem" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <CheckBox android:id="@+id/checkBox_rempwd" android:focusable="false" android:focusableInTouchMode="false" style="@style/CheckBoxStyle.Login" />
+                    <TextView android:textSize="@dimen/login_text_size" android:textColor="@color/white" android:id="@+id/textView_rem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记住密码" style="@style/textViewStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/linearLayout_auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <CheckBox android:id="@+id/checkBox_autologin" style="@style/CheckBoxStyle.Login" />
+                    <TextView android:textSize="@dimen/login_text_size" android:textColor="@color/white" android:id="@+id/textView_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动登录" style="@style/textViewStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0" />
+</LinearLayout>

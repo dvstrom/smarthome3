@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TelevisionActivity" 
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/device_tv_close"
+        />
+    <Button
+        android:id="@+id/open"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="开启"
+        android:background="@drawable/button_selector1"/>
+    
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/open"
+        
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="关闭"
+        android:background="@drawable/button_selector1"/>
+    <Button
+        android:id="@+id/station1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/tv"
+        android:layout_toRightOf="@id/open"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="频道+"
+        android:background="@drawable/button_selector1"/>
+    
+
+    <Button
+        android:id="@+id/station2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/open"
+        android:layout_toRightOf="@id/close"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="频道-"
+        android:background="@drawable/button_selector1"/>
+    <Button
+        android:id="@+id/volume1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/tv"
+        android:layout_toRightOf="@id/station1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="音量+"
+        android:background="@drawable/button_selector1"/>
+    
+
+    <Button
+        android:id="@+id/volume2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/volume1"
+        android:layout_toRightOf="@id/station2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="音量-"
+        android:background="@drawable/button_selector1"/>
+    <Button
+        android:id="@+id/station3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/volume2"
+        android:layout_marginTop="5dp"
+        
+
+        android:layout_alignRight="@id/volume2"
+        android:text="跳台"
+        android:background="@drawable/button_selector1"/>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/station3"
+        android:layout_alignBottom="@+id/station3"
+        android:layout_alignLeft="@+id/close"
+        android:layout_alignRight="@+id/station2"
+        android:ems="10"
+        android:background="#ff8000" >
+
+        <requestFocus />
+    </EditText>
+"
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShadeActivity" 
+    android:background="#000000">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/device_shade_bg" >
+
+        <ImageView
+            android:id="@+id/shade"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"         
+            />
+    </LinearLayout>
+
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:text="全开"
+        android:background="@drawable/button_selector1"/>
+    <Button
+        android:id="@+id/start_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="半开"
+        android:background="@drawable/button_selector1"/>
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_half"
+        android:layout_alignBottom="@+id/start_half"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:text="关闭"
+        android:background="@drawable/button_selector1"/>
+
+
+</RelativeLayout>

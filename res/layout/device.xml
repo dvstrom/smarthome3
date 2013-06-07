@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_festival_bg">
+    
+    底部画廊
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+
+       <com.feiyu.smarthome.GalleryView
+           android:id="@+id/mygallery"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_alignBottom="@+id/tv"
+           android:spacing="20dp" />
+
+		<TextView 
+		    android:id="@+id/tv"  
+            android:layout_width="wrap_content"            
+            android:layout_height="wrap_content"    
+            android:paddingBottom="10.0dip" 
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">  
+         </TextView>  
+    </RelativeLayout>
+
+    顶部
+    <ImageView
+        android:id="@+id/baojing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/device_baojing_normal" />
+    
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_pressed" />
+
+    中间部分
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/home" >
+    </android.support.v4.view.ViewPager>
+    
+</RelativeLayout>
+ -->
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_festival_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/general_content_topview" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+
+	    
+	        <!-- 底部画廊 -->
+	
+	    <RelativeLayout
+	        android:id="@+id/main_bottom"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true">
+	
+	
+	       <com.feiyu.smarthome.GalleryView
+	           android:id="@+id/mygallery"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           android:spacing="20dp" />
+	
+			<TextView 
+			    android:id="@+id/tv"  
+	            android:layout_width="wrap_content"            
+	            android:layout_height="wrap_content"    
+	            android:paddingBottom="10.0dip" 
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true">  
+	         </TextView>  
+        </RelativeLayout>
+		                   <!-- 中间部分 -->
+		    <android.support.v4.view.ViewPager
+		        android:id="@+id/tabpager"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_above="@+id/main_bottom"
+		         >
+		    </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    
+
+    
+</LinearLayout>
+

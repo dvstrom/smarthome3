@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_festival_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/general_content_topview" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/general_ctronller_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="20.0dip">
+            <LinearLayout android:gravity="center" android:background="@drawable/general_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@+id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络设置" />
+            </LinearLayout>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="IP" android:layout_weight="2.0" style="@style/textViewStyle" />
+                <EditText android:id="@+id/editText_oldPwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" style="@style/EditTextStyle" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="网关" android:layout_weight="2.0" style="@style/textViewStyle" />
+                <EditText android:id="@+id/editText_newPwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:layout_weight="1.0" style="@style/EditTextStyle" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="密码" android:layout_weight="2.0" style="@style/textViewStyle" />
+                <EditText android:id="@+id/editText_again" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:layout_weight="1.0" style="@style/EditTextStyle" />
+            </TableRow>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- <include android:id="@+id/include_sure" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/general_button_add" /> -->
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/button_sure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="确定" style="@style/ButtonStyleAdd" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.1" />
+</LinearLayout>
