@@ -101,8 +101,8 @@ public class Const {
 
     /*********************************DOOR ************************/
     public static final byte DOOR_REQUEST=(BytearrayBuilder.IntToByte(29));
-    public static final byte DOOR_OPEN=(BytearrayBuilder.IntToByte(0x01));
-    public static final byte DOOR_CLOSE=(BytearrayBuilder.IntToByte(0x02));
+    public static final byte DOOR_OPEN=0x01;
+    public static final byte DOOR_CLOSE=0x02;
 
 }                                                                                    /*********************************PROJECTOR(Í¶Ó°ÒÇ£© ************************/
 
