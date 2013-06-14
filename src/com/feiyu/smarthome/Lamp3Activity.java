@@ -30,7 +30,7 @@ public class Lamp3Activity extends Activity{
 				{
 					imageView.setImageResource(R.drawable.device_light_normal_on);
                     CommandMessage commmessage=new CommandMessage(2, Const.LAMP_REQUEST, Const.STRENGTHLAMP_UP, 27);
-                    LogoActivity.mService.sendMessage(commmessage);
+                    LogoActivity.conn.Send(commmessage);
 					i++;
 				}else
 				{

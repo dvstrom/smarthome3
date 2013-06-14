@@ -41,13 +41,17 @@ import android.content.Intent;
 import android.view.Menu;
 import android.widget.ImageView;
 import com.feiyu.Sevice.SmartService;
+import com.feiyu.connect.LongConnClient;
 
 public class LogoActivity extends Activity {
 	private ImageView logo;
 	private Handler handler;
 	private Thread clockThread;
 	private boolean isRunning=true;
-    public static  SmartService mService;
+//    public static  SmartService mService;
+    public static LongConnClient conn=null;
+    private String ip = "192.168.1.178";
+    private int port = 1819;
     public static boolean mBound = false;
     public static SmartService.LocalBinder binder;
 
@@ -61,8 +65,10 @@ public class LogoActivity extends Activity {
 		setContentView(R.layout.logo);
 		logo=(ImageView)findViewById(R.id.imageView_logo);
 
-        Intent intent = new Intent(this, SmartService.class);
-        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+        conn=new LongConnClient(ip,port);
+        conn.start();
+   /*     Intent intent = new Intent(LogoActivity.this, SmartService.class);
+        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);*/
 
 		handler=new Handler(){
 			@Override
@@ -84,7 +90,7 @@ public class LogoActivity extends Activity {
 							isRunning=false;
 							Intent intent = new Intent (LogoActivity.this,LoginActivity.class);
 							startActivity(intent);			
-							LogoActivity.this.finish();
+							//LogoActivity.this.finish();
 						}	
 						Message msg=new Message();
 						msg.obj=timer;
@@ -114,10 +120,11 @@ public class LogoActivity extends Activity {
     @Override
     protected void onDestroy() {
             //To change body of overridden methods use File | Settings | File Templates.
+        super.onDestroy();
         if (mBound) {
             unbindService(mConnection);
             mBound = false;
-            super.onDestroy();
+
         }
     }
 
@@ -129,7 +136,7 @@ public class LogoActivity extends Activity {
                                        IBinder service) {
             // 已经绑定了LocalService，强转IBinder对象，调用方法得到LocalService对象
             binder = (SmartService.LocalBinder)service;
-            mService=binder.getService();
+           // mService=binder.getService();
             mBound=true;
         }
 

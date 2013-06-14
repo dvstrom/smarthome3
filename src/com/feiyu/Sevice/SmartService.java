@@ -26,8 +26,12 @@ public class SmartService extends Service {
      *
      */
      public class LocalBinder extends Binder {
-        public SmartService getService(){
+        /*public SmartService getService(){
             return SmartService.this;
+        }*/
+        public Boolean sMessage(AbstractMessage message){
+            Boolean bsend=longsocket.Send(longsocket.getSocket(), message);
+            return  bsend;
         }
     }
 
@@ -45,6 +49,7 @@ public class SmartService extends Service {
     public void onCreate() {
         super.onCreate();    //To change body of overridden methods use File | Settings | File Templates.
         longsocket=new LongConnClient(ip, port);
+        android.os.Debug.waitForDebugger();
         longsocket.start();
     }
     @Override
@@ -57,12 +62,10 @@ public class SmartService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         // TODO Auto-generated method stub
+        android.os.Debug.waitForDebugger();
         return Service.START_CONTINUATION_MASK;
     }
 
-    public Boolean sendMessage(AbstractMessage message){
-        Boolean bsend=longsocket.Send(longsocket.getSocket(), message);
-        return  bsend;
-    }
+
 
 }

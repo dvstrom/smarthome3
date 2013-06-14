@@ -70,8 +70,8 @@ public class Lamp1Activity extends Activity{
 					imageView.setImageResource(R.drawable.device_default_light_open);
                     CommandMessage commmessage=new CommandMessage(2, Const.TV_REQUEST, Const.SELECTTV_CHANNAL, 27);
                     CommandMessage commmessage2=new CommandMessage(2, Const.TV_REQUEST, Const.SELECTTV_CHANNAL, 37);
-                    LogoActivity.mService.sendMessage(commmessage);
-                    LogoActivity.mService.sendMessage(commmessage2);
+                    LogoActivity.conn.Send(commmessage);
+                    LogoActivity.conn.Send(commmessage2);
 					i++;
 				}else
 				{
