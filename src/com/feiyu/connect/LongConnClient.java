@@ -105,7 +105,7 @@ public class LongConnClient extends Thread {
     public void run() {
         while(true){
             //---------读数据---------------------------
-            close = isServerClose(socket);//判断是否断开
+            //close = isServerClose(socket);//判断是否断开
             if(!close){//没有断开，开始读数据
                 byte[] receive = ReadByte(socket);
                 if(receive!=null && receive.length>0){
@@ -160,7 +160,11 @@ public class LongConnClient extends Thread {
         bool=Send(csocket,message.bytearrayBuilder.output);
         return bool;
     }
-
+    public Boolean Send( AbstractMessage message){
+        Boolean bool;
+        bool=Send(this.socket,message);
+        return bool;
+    }
     public Boolean Send(Socket csocket, String message){
         try{
             System.out.println("C: sending...");
@@ -210,7 +214,7 @@ public class LongConnClient extends Thread {
      */
     public Boolean isServerClose(Socket socket){
         try{
-            socket.sendUrgentData(0);//发送1个字节的紧急数据，默认情况下，服务器端没有开启紧急数据处理，不影响正常通信
+            socket.sendUrgentData(2);//发送1个字节的紧急数据，默认情况下，服务器端没有开启紧急数据处理，不影响正常通信
             return false;
         }catch(Exception se){
             return true;
