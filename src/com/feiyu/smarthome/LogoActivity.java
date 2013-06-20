@@ -43,6 +43,8 @@ import android.widget.ImageView;
 import com.feiyu.Sevice.SmartService;
 import com.feiyu.connect.LongConnClient;
 
+import java.io.IOException;
+
 public class LogoActivity extends Activity {
 	private ImageView logo;
 	private Handler handler;
@@ -126,6 +128,13 @@ public class LogoActivity extends Activity {
             mBound = false;
 
         }
+        try{
+            conn.closesocket();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 
 

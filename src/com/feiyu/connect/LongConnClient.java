@@ -110,7 +110,7 @@ public class LongConnClient extends Thread {
                 byte[] receive = ReadByte(socket);
                 if(receive!=null && receive.length>0){
                     for (int i=0;i<receive.length; i++){
-                        System.out.println(receive[i]);
+                        System.out.println("监听读取"+receive[i]);
                     }
                 }
             }
@@ -136,7 +136,7 @@ public class LongConnClient extends Thread {
     /**
      * 发送数据，发送失败返回false,发送成功返回true
      * @param csocket
-     * @param message
+     * @param bos
      * @return
      */
     public Boolean Send(Socket csocket,ByteArrayOutputStream bos){
@@ -187,21 +187,25 @@ public class LongConnClient extends Thread {
      */
     public byte[] ReadByte(Socket csocket){
         try{
-            csocket.setSoTimeout(sotimeout);
+       //     csocket.setSoTimeout(sotimeout);
 
-            byte[] bn = new byte[1024];
+            byte[] bn = new byte[32];
             int j=in.read(bn);
             System.out.println("C: Received: '" +  "'");
+            if (j>0){
             for (int i=0;i<j; i++){
                 System.out.println(bn[i]);
             }
+
             System.out.println("接受数据数为："+ j);
+            }
 
 
-            byte[] rn=new byte[j];
-            System.arraycopy(bn,0, rn,0,j);
+          //  byte[] rn=new byte[j];
+           // System.arraycopy(bn,0, rn,0,j);
 
-            return rn;
+
+            return bn;
         }catch(IOException se){
             return null;
         }
@@ -227,6 +231,8 @@ public class LongConnClient extends Thread {
      */
     public Boolean closesocket() throws IOException{
         try{
+            this.out.close();
+            this.in.close();
             this.socket.close();
             return true;
         }catch(IOException e){
@@ -234,4 +240,5 @@ public class LongConnClient extends Thread {
         }
 
     }
+
 }

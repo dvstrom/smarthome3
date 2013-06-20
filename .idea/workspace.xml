@@ -24,22 +24,16 @@
       </GlobalState>
     </option>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp1Activity.java" afterPath="$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp1Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp3Activity.java" afterPath="$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp3Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" afterPath="$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feiyu/Sevice/SmartService.java" afterPath="$PROJECT_DIR$/src/com/feiyu/Sevice/SmartService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feiyu/connect/LongConnClient.java" afterPath="$PROJECT_DIR$/src/com/feiyu/connect/LongConnClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Smarthome2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371189015937" ignored="false" />
-    <file path="/fragment.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371110934937" ignored="false" />
+    <file path="/Dummy.txt" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371690341062" ignored="false" />
+    <file path="/fragment.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371695477120" ignored="false" />
     <file path="/LongconnClient.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1369039753046" ignored="false" />
     <file path="/a.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1370675750468" ignored="false" />
     <file path="/sample.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1370572568515" ignored="false" />
@@ -52,12 +46,12 @@
     <file path="/Lamp1Activity.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371108954937" ignored="false" />
     <file path="/SmartService.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371089363758" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1370240616640" ignored="false" />
-    <file path="/LogoActivity.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371109907187" ignored="false" />
+    <file path="/LogoActivity.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371695251352" ignored="false" />
     <file path="/Lamp3Activity.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371108979671" ignored="false" />
     <file path="$PROJECT_DIR$/res/layout/window.xml" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371090937588" ignored="false" />
     <file path="$PROJECT_DIR$/res/layout/shade_cartoon.xml" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371090937588" ignored="false" />
     <file path="$PROJECT_DIR$/res/layout/television.xml" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371090937588" ignored="false" />
-    <file path="/LongConnClient.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371108863500" ignored="false" />
+    <file path="/LongConnClient.java" changelist="adbaca0c-e2d6-4ca0-aae4-daa9ef9fae66" time="1371695422482" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" line="70" class="com.feiyu.smarthome.LogoActivity" package="com.feiyu.smarthome">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" line="72" class="com.feiyu.smarthome.LogoActivity" package="com.feiyu.smarthome">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,7 +108,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" line="72" class="com.feiyu.smarthome.LogoActivity" package="com.feiyu.smarthome">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java" line="74" class="com.feiyu.smarthome.LogoActivity" package="com.feiyu.smarthome">
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -220,19 +214,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LongConnClient.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LongConnClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/feiyu/connect/LongConnClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="22" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0">
+            <state line="50" column="66" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.77459013">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="11" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogoActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java">
+      <file leaf-file-name="Socket.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/adt-bundle-17/adt-bundle-windows-x86/sdk/platforms/android-4.2/android.jar!/java/net/Socket.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="10" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.41584158">
+            <state line="111" column="16" selection-start="4888" selection-end="4888" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -241,7 +246,16 @@
       <file leaf-file-name="Lamp1Activity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp1Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="53" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
+            <state line="69" column="61" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LampActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LampActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -250,7 +264,7 @@
       <file leaf-file-name="Lamp3Activity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp3Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="31" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
+            <state line="26" column="31" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -356,6 +370,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -457,27 +472,22 @@
               <option name="myItemId" value="feiyu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="257" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="258" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="257" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="257" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/PlayerSdk.jar!/" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="273" />
@@ -493,8 +503,8 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -503,8 +513,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -573,19 +583,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -612,6 +609,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -730,7 +740,11 @@
       <created>1371189030968</created>
       <updated>1371189030968</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="将servce屏蔽掉，测试socket">
+      <created>1371190214812</created>
+      <updated>1371190214812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -755,11 +769,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1058" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32830626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.6718925" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39907193" sideWeight="0.6145946" order="3" side_tool="false" content_ui="tabs" />
@@ -767,13 +782,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201856" sideWeight="0.48702702" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6718925" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32714617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201856" sideWeight="0.51297295" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259861" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18" sideWeight="0.67169374" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18" sideWeight="0.67053366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.6774916" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6703911" order="2" side_tool="false" content_ui="combo" />
@@ -781,7 +796,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.6774916" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -870,16 +884,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/adt-bundle-17/adt-bundle-windows-x86/sdk/platforms/android-4.2/android.jar!/android/os/MessageQueue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://D:/adt-bundle-17/adt-bundle-windows-x86/sdk/platforms/android-4.2/android.jar!/android/os/Looper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://D:/adt-bundle-17/adt-bundle-windows-x86/sdk/platforms/android-4.2/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="21" selection-start="312" selection-end="312" vertical-scroll-proportion="0.7242991" />
@@ -925,6 +929,27 @@
         <state line="119" column="30" selection-start="6330" selection-end="6330" vertical-scroll-proportion="0.054404143" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp1Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="61" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LampActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp3Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="31" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/feiyu/Sevice/SmartService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="31" selection-start="502" selection-end="567" vertical-scroll-proportion="0.0">
@@ -932,31 +957,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp1Activity.java">
+    <entry file="jar://D:/adt-bundle-17/adt-bundle-windows-x86/sdk/platforms/android-4.2/android.jar!/java/net/Socket.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="53" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/Lamp3Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="31" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/feiyu/connect/LongConnClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="22" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0">
+        <state line="111" column="16" selection-start="4888" selection-end="4888" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/feiyu/smarthome/LogoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="10" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.41584158">
+        <state line="131" column="11" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/feiyu/connect/LongConnClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="66" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.77459013">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
