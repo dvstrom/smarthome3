@@ -14,6 +14,9 @@ public class CommandMessage extends AbstractMessage implements Message{
     public int command;
     public int data;
 
+    public CommandMessage() {
+    }
+
     public CommandMessage(int id, int type, int command, int data ) {
         super(id, type);
         this.bytearrayBuilder.write(command).write(2).write(data);
@@ -35,5 +38,13 @@ public class CommandMessage extends AbstractMessage implements Message{
     @Override
     public void parse(byte[] b) throws ParseException {
         //To change body of implemented methods use File | Settings | File Templates.
+        this.type=b[3]&0xff;
+        System.out.println("this message type is: " + this.type);
+        this.id=b[4]&0xff;
+        System.out.println("this message id is: " + this.id);
+        this.command=b[5]&0xff;
+        System.out.println("this message command is: " + this.command);
+        this.data=b[7]&0xff;
+        System.out.println("this message data is: " + this.data);
     }
 }

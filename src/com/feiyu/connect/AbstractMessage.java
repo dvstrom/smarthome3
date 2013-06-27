@@ -17,6 +17,10 @@ public class AbstractMessage {
     public int type;
 
     public int id;
+
+    public AbstractMessage() {
+    }
+
     public AbstractMessage(int id, int type) {
         this.id = id;
         this.type = type;

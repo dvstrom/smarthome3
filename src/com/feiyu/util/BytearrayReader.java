@@ -1,5 +1,8 @@
 package com.feiyu.util;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+
 /**Ω‚Œˆ–≠“È
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -11,7 +14,7 @@ public class BytearrayReader {
 
     private  int point=0;
     private byte[] buf=null;
-
+    //public ByteArrayInputStream input=new ByteArrayInputStream();
    /* public BytearrayReader(byte [] b){
         buf=b;
     }

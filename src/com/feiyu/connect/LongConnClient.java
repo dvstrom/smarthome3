@@ -108,12 +108,26 @@ public class LongConnClient extends Thread {
             //close = isServerClose(socket);//判断是否断开
             if(!close){//没有断开，开始读数据
                 byte[] receive = ReadByte(socket);
+                int readcount=0;
                 if(receive!=null && receive.length>0){
-                    for (int i=0;i<receive.length; i++){
+                      readcount=receive.length;
+                      for (int i=0;i<readcount; i++){
                         System.out.println("监听读取"+receive[i]);
                     }
                 }
+                if (readcount>4){
+                    Message m=new CommandMessage();
+                    if (m != null) {
+                        try {
+                            m.parse(receive);
+                        } catch (ParseException e) {
+                            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                        }
+                    }
+                }
+
             }
+
             //---------创建连接-------------------------
             while(close){//已经断开，重新建立连接
                 try{
@@ -190,14 +204,22 @@ public class LongConnClient extends Thread {
        //     csocket.setSoTimeout(sotimeout);
 
             byte[] bn = new byte[32];
-            int j=in.read(bn);
-            System.out.println("C: Received: '" +  "'");
-            if (j>0){
-            for (int i=0;i<j; i++){
-                System.out.println(bn[i]);
-            }
+            int readcount=in.read(bn);
+            //byte socketreceive []=java.util.Arrays.copyOf(bn,readcount);
 
-            System.out.println("接受数据数为："+ j);
+            System.out.println("C: Received: '" +  "'");
+            byte[] socketreceive = new byte[readcount];
+            System.arraycopy(bn,0,socketreceive,0,readcount);
+            if (readcount>=0){
+                for (int i=0;i<readcount; i++){
+                System.out.println(socketreceive[i]);
+            }
+                System.out.println("接受缓冲区数据数为："+ readcount);
+                return socketreceive;
+            }
+            else {
+                System.out.println("client is closing");
+                 return null;
             }
 
 
@@ -205,7 +227,7 @@ public class LongConnClient extends Thread {
            // System.arraycopy(bn,0, rn,0,j);
 
 
-            return bn;
+            //return bn;
         }catch(IOException se){
             return null;
         }
@@ -235,6 +257,7 @@ public class LongConnClient extends Thread {
             this.in.close();
             this.socket.close();
             return true;
+
         }catch(IOException e){
             return false;
         }
